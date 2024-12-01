@@ -1,0 +1,3 @@
+These two programs are apart of Assignment #2 for TPRG 2.
+
+Both the client and the server uses PORT 5000 and the IP address for both programs is whatever the IP address is on the RPi4 wherever you are running it. The Server_vcgencmds.py file uses 5 different vcgencmd commands from the Raspberry pi and compiles them into a python dictionary string. From there it is converted to JSON format and sent to the vcgencmd_client.py file where it is then decoded and converted back to a python dictionary using json.loads and json.dumps. The dictionary is then split up by vcgencmd data type and then printed into the shell. The client exits after each data transfer and will have to be run again to update the received data.  "# TPRG_2_Assgn_2_2024" 
